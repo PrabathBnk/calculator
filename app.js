@@ -161,3 +161,16 @@ document.body.addEventListener("keydown", function(event){
     }
 });
 
+
+numbers.forEach(number =>{
+    document.getElementById("btnBg" + number).addEventListener("click", function(){
+        document.getElementById("btn" + number).click();      
+    });
+})
+
+operators.forEach(operator =>{
+    document.getElementById("btnBg" + operator).addEventListener("click", function(){
+        document.getElementById("btn" + operator).click();
+    });
+})
+

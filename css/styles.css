@@ -126,7 +126,7 @@ img{
     }
     img{
         rotate: 0deg;
-        top: 15vh;
+        top: 5vh;
         width: 70vw;
         margin: 0;
     }
@@ -139,6 +139,12 @@ img{
     }
     .gap-4{
         gap: 1rem !important;
+    }
+    .main-text{
+        font-size: 10vw !important;
+    }
+    .sub-text{
+        font-size: 5.5vw !important;
     }
 }
 
