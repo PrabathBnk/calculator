@@ -159,6 +159,7 @@ img{
     font-size: 3vw;
     width: 100%;
     color: #1a1b1b;
+    letter-spacing: -1px;
 }
 .sub-text{
     font-size: 1.3vw;

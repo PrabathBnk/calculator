@@ -37,10 +37,16 @@ operators.forEach(operator =>{
 
 
 //--------------------------------Operations------------------------------
+function isOverLimit(){
+    return document.getElementById("mainText").innerHTML.length >= 12;
+}
+
 numbers.forEach(btn => {
     document.getElementById("btn" + btn).addEventListener("click", function() {
-        let txtField = document.getElementById("mainText");
-        txtField.innerHTML += btn;
+        if(!isOverLimit()){
+            let txtField = document.getElementById("mainText");
+            txtField.innerHTML += btn;
+        }
     });
 })
 
@@ -53,13 +59,12 @@ document.getElementById("btnDel").addEventListener("click", function() {
         }
         document.getElementById("mainText").innerHTML = newText;
     }
-    console.log(document.getElementById("btnDel"));
 });
 
 document.body.addEventListener("keypress", function(event){
     numbers.forEach(num =>{
         if(event.key == num.toString()){
-            document.getElementById("mainText").innerHTML += num;
+            document.getElementById("btn" + num).click();
         }
     })
     
