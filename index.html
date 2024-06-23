@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b7e75ffc32.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <main class="calc-body flex-wrap overflow-hidden d-flex justify-content-center align-items-center">
+        <div id="display" class="display d-flex justify-content-end flex-wrap mb-3">
+            <h4 id="subText" class="sub-text me-3"></h4>
+            <h2 id="mainText" class="main-text text-end me-3"></h2>
+        </div>
+        <div class="btn-container">
+            <div class="container">
+                <div class="row gap-4 mb-3">
+                    <div class="col p-0 col-btn col-btn-large d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 op-btn position-absolute" type="button" id="btnDelAll" value="DEL" />
+                        <div id="btnBgDelAll" class="btn-bg rounded-circle op-btn-bg btn-large"></div>
+                    </div>
+                    <div class="col p-0 col-btn col-btn-large d-flex justify-content-center align-items-center">
+                        <div class="btn p-0 op-btn position-absolute" id="btnDel"><i class="fa-solid fa-delete-left"></i></div>
+                        <div id="btnBgDel" class="btn-bg rounded-circle op-btn-bg btn-large"></div>
+                    </div>
+                </div>
+                <div class="row gap-4 mb-3">
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn7" value="7" />
+                        <div id="btnBg7" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn8" value="8" />
+                        <div id="btnBg8" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn9" value="9" />
+                        <div id="btnBg9" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <div class="btn p-0 position-absolute op-btn" id="btnAdd"><i class="fa-solid fa-plus"></i></div>
+                        <div id="btnBgAdd" class="btn-bg rounded-circle op-btn-bg"></div>
+                    </div>
+                </div>
+                <div class="row gap-4 mb-3">
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn4" value="4" />
+                        <div id="btnBg4" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn5" value="5" />
+                        <div id="btnBg5" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn6" value="6" />
+                        <div id="btnBg6" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <div class="btn p-0 position-absolute op-btn" id="btnSub"><i class="fa-solid fa-minus"></i></div>
+                        <div id="btnBgSub" class="btn-bg rounded-circle op-btn-bg"></div>
+                    </div>
+                </div>
+                <div class="row gap-4 mb-3">
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn1" value="1" />
+                        <div id="btnBg1" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn2" value="2" />
+                        <div id="btnBg2" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn3" value="3" />
+                        <div id="btnBg3" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <div class="btn p-0 position-absolute op-btn" id="btnMul"><i class="fa-solid fa-xmark"></i></div>
+                        <div id="btnBgMul" class="btn-bg rounded-circle op-btn-bg"></div>
+                    </div>
+                </div>
+                <div class="row gap-4 mb-3">
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btn0" value="0" />
+                        <div id="btnBg0" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute" type="button" id="btnDec" value="." />
+                        <div id="btnBgDec" class="btn-bg rounded-circle"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <input class="btn p-0 position-absolute op-btn" type="button" id="btnEquals" value="=" />
+                        <div id="btnBgEquals" class="btn-bg rounded-circle op-btn-bg"></div>
+                    </div>
+                    <div class="col p-0 col-btn d-flex justify-content-center align-items-center">
+                        <div class="btn p-0 position-absolute op-btn" id="btnDiv"><i class="fa-solid fa-divide"></i></div>
+                        <div id="btnBgDiv" class="btn-bg rounded-circle op-btn-bg"></div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </main>
+    <div class="container-fluid h-100 z-n1 position-absolute d-flex align-items-center img-container">
+        <img class="position-absolute z-n1" src="img/calc_logo.svg" alt="Calculator">
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
